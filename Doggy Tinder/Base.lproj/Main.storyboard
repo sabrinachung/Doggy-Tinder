@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="f9A-Ch-CAU">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Doggy_Tinder" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="center" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="DOGGY TINDER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jFb-eV-TwU">
+                                <rect key="frame" x="79" y="81" width="404" height="143"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="50"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="imgres.png" translatesAutoresizingMaskIntoConstraints="NO" id="wsU-dO-DBV">
+                                <rect key="frame" x="198" y="243" width="177" height="178"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="(you)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Si0-9b-smJ">
+                                <rect key="frame" x="266" y="429" width="40" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o2X-YJ-tyA">
+                                <rect key="frame" x="167" y="541" width="266" height="33"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <state key="normal" title="FIND YOUR DOGMATE">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="testing:" destination="BYZ-38-t0r" eventType="touchUpInside" id="r3h-Tj-KNu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.47058823529999999" green="0.72941176470000002" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="jFb-eV-TwU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Qa8-mg-KJi"/>
+                            <constraint firstItem="Si0-9b-smJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fsh-a3-wLC"/>
+                            <constraint firstItem="wsU-dO-DBV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hfP-VQ-0dF"/>
+                            <constraint firstItem="o2X-YJ-tyA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pm3-hF-zOT"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="WRz-6D-fHe"/>
+                    <connections>
+                        <segue destination="enV-0w-r5p" kind="show" identifier="toSwiping" id="cnl-PL-e9U"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="730" y="163"/>
+        </scene>
+        <!--Swiping Thru-->
+        <scene sceneID="bmC-k5-P1p">
+            <objects>
+                <viewController id="enV-0w-r5p" customClass="Swiping_Thru" customModule="Doggy_Tinder" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0Vv-fk-ayw"/>
+                        <viewControllerLayoutGuide type="bottom" id="LUw-e9-bp6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ib2-Mh-teI" userLabel="Swiping_Thru">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.53725490196078429" green="0.7803921568627451" blue="0.89411764705882357" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="uM8-Pg-Y1Q" appends="YES" id="FLp-GL-Kq0"/>
+                            <outletCollection property="gestureRecognizers" destination="ohe-55-2Eu" appends="YES" id="h96-cy-MJt"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <segue destination="e5u-Tw-FE9" kind="show" identifier="toMatch" id="d4Z-Cp-Kvm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GPP-Gm-Df5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="uM8-Pg-Y1Q" userLabel="Swipin Right">
+                    <connections>
+                        <action selector="SwipeRight:" destination="enV-0w-r5p" id="cOd-Ln-CQw"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="ohe-55-2Eu" userLabel="Swipin Left">
+                    <connections>
+                        <action selector="SwipeLeft:" destination="enV-0w-r5p" id="zjY-b0-rin"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="730" y="997"/>
+        </scene>
+        <!--It's A Match-->
+        <scene sceneID="8xt-pa-9ta">
+            <objects>
+                <viewController id="e5u-Tw-FE9" userLabel="It's A Match" customClass="MatchViewController" customModule="Doggy_Tinder" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hR2-zq-dGi"/>
+                        <viewControllerLayoutGuide type="bottom" id="EZO-2v-FY2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KKA-qa-0ay">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="imgres.png" translatesAutoresizingMaskIntoConstraints="NO" id="f5P-YJ-J9T">
+                                <rect key="frame" x="89" y="159" width="110" height="110"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="hT7-gY-Nu3"/>
+                                    <constraint firstAttribute="width" constant="150" id="ufz-bH-94l"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="IT'S A MATCH!!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1O4-XY-nMm">
+                                <rect key="frame" x="107" y="422" width="386" height="100"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="53"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="+" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xgS-Um-8KR">
+                                <rect key="frame" x="207" y="170" width="70" height="87"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="91"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ihf-Ob-U4y">
+                                <rect key="frame" x="285" y="159" width="110" height="110"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="OyL-P0-Cz4"/>
+                                    <constraint firstAttribute="height" constant="150" id="mqj-yA-U5x"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.47058823529411764" green="0.72941176470588232" blue="0.8666666666666667" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="xgS-Um-8KR" firstAttribute="leading" secondItem="f5P-YJ-J9T" secondAttribute="trailing" constant="8" id="5wG-kd-BlR"/>
+                            <constraint firstItem="xgS-Um-8KR" firstAttribute="centerX" secondItem="KKA-qa-0ay" secondAttribute="centerX" id="Gkv-WI-EF6"/>
+                            <constraint firstItem="ihf-Ob-U4y" firstAttribute="leading" secondItem="xgS-Um-8KR" secondAttribute="trailing" constant="8" id="SKy-M5-8fu"/>
+                            <constraint firstItem="1O4-XY-nMm" firstAttribute="centerX" secondItem="KKA-qa-0ay" secondAttribute="centerX" id="SSg-l4-Jxr"/>
+                            <constraint firstItem="1O4-XY-nMm" firstAttribute="centerX" secondItem="KKA-qa-0ay" secondAttribute="centerX" id="jpM-iQ-MMP"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="matchDog" destination="ihf-Ob-U4y" id="Skq-j2-3yi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mWH-mt-WHl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="42" y="997"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="MDo-d9-BdG">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="f9A-Ch-CAU" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zgS-Og-gua">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="3OL-lU-pqV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RmU-la-zcm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="42" y="163"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="imgres.png" width="225" height="225"/>
+    </resources>
+</document>
